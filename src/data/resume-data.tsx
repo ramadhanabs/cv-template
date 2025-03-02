@@ -20,98 +20,102 @@ import {
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Ramadhana Bagus S.",
+  initials: "RBS",
+  location: "Jakarta, Indonesia",
+  locationLink: "https://www.google.com/maps/place/jakarta",
   about:
-    "Full Stack Engineer focused on building products with extra attention to detail",
+    "Fullstack Engineer from Indonesia 🇮🇩",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+    "Software development enthusiast who also run and lift weights as his daily routines.",
+  avatarUrl: "/avatar.png",
+  personalWebsiteUrl: "https://bagus.men",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "ramadhanabagus99@gmail.com",
+    tel: "+6282227804252",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/ramadhanabs",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/ramadhanabagus/",
         icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
-      },
+      }
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Universitas Islam Indonesia",
+      degree: "Bachelor's Degree in Computer Science",
+      start: "2017",
+      end: "2021",
     },
   ],
   work: [
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: ["Remote"],
-      title: "Senior Full Stack Developer",
+      company: "Deloitte Consulting - SEA",
+      link: "https://www2.deloitte.com/id/en.html",
+      badges: ["Full Time - Remote"],
+      title: "Senior Technology Analyst",
       logo: ParabolLogo,
-      start: "2021",
+      start: "2024",
+      end: "Current",
+      description:
+        "<div>\n    <p><strong>Deloitte</strong> is a leading global professional services firm, providing audit, consulting, tax, and advisory services with a strong presence in over 150 countries.</p>\n    <ul class='list-disc pl-4 pt-2'>\n        <li>Developed the frontend website of ticketing features for Resort World Sentosa Singapore, ensuring seamless integration with microservices and Adobe Experience Manager (AEM).</li>\n        <li>Collaborated with cross-functional teams from Singapore, Malaysia, and the Philippines to optimize website performance and improve the overall user experience.</li>\n        <li>Worked closely with the Microservices and AEM teams to integrate dynamic content and backend services, improving website updates and time-to-market.</li>\n        <li>Utilized TypeScript, ReactJS, and AEM to build scalable, high-performance web applications, enhancing the speed and reliability of key customer-facing features.</li>\n    </ul>\n</div>",
+    },
+    {
+      company: "Kounslr",
+      link: "https://kounslr.com",
+      badges: ["Freelance - Remote"],
+      title: "Fullstack Engineer",
+      logo: ParabolLogo,
+      start: "2023",
       end: "2024",
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+        "<div>\n    <p><strong>Kounslr</strong> is an educational counseling platform designed to help high school students navigate the college application process and achieve their dream college.</p>\n    <ul class='list-disc pl-4 pt-2'>\n        <li>Built Kounslr independently, turning the founder's product ideas into reality using TypeScript, ReactJS, TailwindCSS, Firebase, NodeJS, and Cloud Functions, while also integrating AI to enhance the platform's functionality.</li>\n        <li>Managed both the production and development environments, and developed the public-facing website and admin portal for statistics monitoring, ensuring smooth operations and seamless user experience.</li>\n    </ul>\n</div>\n",
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
+      company: "Erajaya Swasembada",
+      link: "https://eraspace.com",
+      badges: ["Full Time - On Site"],
+      title: "Frontend Developer - B2C",
+      logo: ParabolLogo,
+      start: "2022",
+      end: "2024",
       description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
+       "<div>\n    <p><strong>Erajaya Swasembada</strong> is one of Indonesia's leading distributors of consumer electronics and telecommunications products, with a strong presence in both retail and e-commerce.</p>\n    <ul class='list-disc pt-2 pl-4'>\n        <li>Developed key features such as the order and promo notification inbox for Eraspace and iBox, enhancing customer engagement and real-time updates.</li>\n        <li>Improved the iBox codebase by implementing TypeScript, Tanstack Query for efficient data-fetching and caching, and migrating from Next.js 10 to 13, optimizing performance and maintainability.</li>\n        <li>Enhanced site performance by improving Core Web Vitals for the JDSports website and supporting SEO efforts through Salesforce and Google Analytics integration, driving better customer insights.</li>\n        <li>Led testing initiatives by introducing unit and integration testing in the iBox codebase using Jest, React Testing Library, and Mock Service Worker, improving code quality and reliability.</li>\n    </ul>\n</div>\n",
     },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: [],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
+     {
+      company: "PT Infosys Solusi Terpadu",
+      link: "https://eraspace.com",
+      badges: ["Full Time - Hybrid"],
+      title: "Frontend Developer",
+      logo: ParabolLogo,
+      start: "2022",
+      end: "2022",
       description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: [],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description: "Creating and testing software for LTE base stations",
+        "<div>\n    <p><strong>Infosys Solusi Terpadu</strong> is a leading provider of integrated IT services and solutions in Indonesia, specializing in digital transformation, cloud computing, and enterprise technologies.</p>\n    <ul class='list-disc pt-2 pl-4'>\n        <li>Developed an internal dashboard for a major Indonesian bank, collaborating with the backend and QC teams, using ReactJS and VueJS for a seamless user experience.</li>\n    </ul>\n</div>\n",
     },
   ],
-  skills: [
-    "JavaScript",
-    "TypeScript",
-    "React/Next.js/Remix",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
+  techstack: [
+    "ReactJS",
+    "VueJS",
+    "NextJS",
+    "Gin",
+    "Panda",
+    "Google Cloud Platform",
+    "Firebase",
+    "Adobe Experience Manager",
+    "Jquery"
+  ],
+  programmingLanguages: [
+    "Typescript",
+    "Golang",
+    "C++",
+    "Python"
   ],
   projects: [
     {
@@ -130,149 +134,6 @@ export const RESUME_DATA = {
         label: "consultly.com",
         href: "https://consultly.com/",
       },
-    },
-    {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
-      description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      logo: JarockiMeLogo,
-      link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
-      },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Parabol",
-      techStack: [
-        "Full Stack Developer",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
-      link: {
-        label: "github.com",
-        href: "https://parabol.co/",
-      },
-    },
-    {
-      title: "Evercast",
-      techStack: [
-        "Lead Frontend Developer",
-
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
-      link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
-      },
-    },
-    {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
-      link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
-      },
-    },
-    {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
-      link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
-      },
-    },
-    {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
-      link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
-      },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
     },
   ],
 } as const;

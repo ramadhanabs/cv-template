@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
-        <div className="flex items-center justify-between">
+        <div className="flex md:items-center justify-between flex-col-reverse gap-2 md:flex-row">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
             <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
@@ -88,7 +88,7 @@ export default function Page() {
           </div>
 
           <Avatar className="size-28">
-            <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
+            <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} className="border border-gray-300 rounded-xl bg-[#fefefe] shadow" />
             <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
           </Avatar>
         </div>
@@ -104,8 +104,8 @@ export default function Page() {
             return (
               <Card key={work.company}>
                 <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                  <div className="flex md:items-center justify-between gap-2 text-base flex-col md:flex-row">
+                    <h3 className="inline-flex items-center justify-between md:justify-center gap-x-1 font-semibold leading-none">
                       <a className="hover:underline" href={work.link}>
                         {work.company}
                       </a>
@@ -131,8 +131,7 @@ export default function Page() {
                     {work.title}
                   </h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs">
-                  {work.description}
+                <CardContent className="mt-2 text-xs list-disc" dangerouslySetInnerHTML={{__html: work.description}}>
                 </CardContent>
               </Card>
             );
@@ -159,15 +158,28 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Skills</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
-            })}
+          <h2 className="text-xl font-bold">Tech Stack</h2>
+
+          <div className="flex items-center justify-between">
+            <p className="text-sm font-mono">Programming Language:</p>
+            <div className="flex flex-wrap gap-1">
+              {RESUME_DATA.programmingLanguages.map((lang) => {
+                return <Badge key={lang}>{lang}</Badge>;
+              })}
+            </div>
+          </div>
+
+          <div className="flex items-start justify-between">
+            <p className="text-sm font-mono">Toolbox:</p>
+            <div className="flex flex-wrap gap-1 justify-end">
+              {RESUME_DATA.techstack.map((stack) => {
+                return <Badge key={stack}>{stack}</Badge>;
+              })}
+            </div>
           </div>
         </Section>
 
-        <Section className="print-force-new-page scroll-mb-16">
+        {/* <Section className="print-force-new-page scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
@@ -182,7 +194,7 @@ export default function Page() {
               );
             })}
           </div>
-        </Section>
+        </Section> */}
       </section>
 
       <CommandMenu

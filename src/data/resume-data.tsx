@@ -91,8 +91,10 @@ export const RESUME_DATA = {
     "Firebase",
     "Adobe Experience Manager",
     "Jquery",
+    "Foundry",
+    "Wagmi"
   ],
-  programmingLanguages: ["Typescript", "Golang", "C++", "Python"],
+  programmingLanguages: ["Typescript", "Golang", "C++", "Python", "Solidity"],
   projects: [
     {
       title: "Eraspace",

@@ -1,34 +1,15 @@
-import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
-} from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { ConsultlyLogo, ParabolLogo } from "@/images/logos"
+import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons"
 
 export const RESUME_DATA = {
   name: "Ramadhana Bagus S.",
   initials: "RBS",
   location: "Jakarta, Indonesia",
   locationLink: "https://www.google.com/maps/place/jakarta",
-  about:
-    "Fullstack Engineer from Indonesia 🇮🇩",
+  about: "Fullstack Engineer from Indonesia 🇮🇩",
   summary:
-    "Software development enthusiast who also run and lift weights as his daily routines.",
-  avatarUrl: "/avatar.png",
+    "Interested in software development, microservices, infrastructure, and Web3 (DeFi). Also love running and weightlifting.",
+  avatarUrl: "/avatar.jpg",
   personalWebsiteUrl: "https://bagus.men",
   contact: {
     email: "ramadhanabagus99@gmail.com",
@@ -43,7 +24,7 @@ export const RESUME_DATA = {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/ramadhanabagus/",
         icon: LinkedInIcon,
-      }
+      },
     ],
   },
   education: [
@@ -86,9 +67,9 @@ export const RESUME_DATA = {
       start: "2022",
       end: "2024",
       description:
-       "<div>\n    <p><strong>Erajaya Swasembada</strong> is one of Indonesia's leading distributors of consumer electronics and telecommunications products, with a strong presence in both retail and e-commerce.</p>\n    <ul class='list-disc pt-2 pl-4'>\n        <li>Developed key features such as the order and promo notification inbox for Eraspace and iBox, enhancing customer engagement and real-time updates.</li>\n        <li>Improved the iBox codebase by implementing TypeScript, Tanstack Query for efficient data-fetching and caching, and migrating from Next.js 10 to 13, optimizing performance and maintainability.</li>\n        <li>Enhanced site performance by improving Core Web Vitals for the JDSports website and supporting SEO efforts through Salesforce and Google Analytics integration, driving better customer insights.</li>\n        <li>Led testing initiatives by introducing unit and integration testing in the iBox codebase using Jest, React Testing Library, and Mock Service Worker, improving code quality and reliability.</li>\n    </ul>\n</div>\n",
+        "<div>\n    <p><strong>Erajaya Swasembada</strong> is one of Indonesia's leading distributors of consumer electronics and telecommunications products, with a strong presence in both retail and e-commerce.</p>\n    <ul class='list-disc pt-2 pl-4'>\n        <li>Developed key features such as the order and promo notification inbox for Eraspace and iBox, enhancing customer engagement and real-time updates.</li>\n        <li>Improved the iBox codebase by implementing TypeScript, Tanstack Query for efficient data-fetching and caching, and migrating from Next.js 10 to 13, optimizing performance and maintainability.</li>\n        <li>Enhanced site performance by improving Core Web Vitals for the JDSports website and supporting SEO efforts through Salesforce and Google Analytics integration, driving better customer insights.</li>\n        <li>Led testing initiatives by introducing unit and integration testing in the iBox codebase using Jest, React Testing Library, and Mock Service Worker, improving code quality and reliability.</li>\n    </ul>\n</div>\n",
     },
-     {
+    {
       company: "PT Infosys Solusi Terpadu",
       link: "https://eraspace.com",
       badges: ["Full Time - Hybrid"],
@@ -109,31 +90,63 @@ export const RESUME_DATA = {
     "Google Cloud Platform",
     "Firebase",
     "Adobe Experience Manager",
-    "Jquery"
+    "Jquery",
   ],
-  programmingLanguages: [
-    "Typescript",
-    "Golang",
-    "C++",
-    "Python"
-  ],
+  programmingLanguages: ["Typescript", "Golang", "C++", "Python"],
   projects: [
     {
-      title: "Consultly",
-      techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-      ],
-      description: "A platform to build and grow your online business",
+      title: "Eraspace",
+      techStack: ["TypeScript", "Next.js", "TailwindCSS"],
+      description: "Eraspace is a biggest lifestyle and gadget retailer website in Indonesia.",
       logo: ConsultlyLogo,
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "eraspace.com",
+        href: "https://eraspace.com/",
+      },
+    },
+    {
+      title: "iBox",
+      techStack: ["TypeScript", "Next.js", "TailwindCSS"],
+      description: "iBox is an official reseller of Apple Premium Product in Indonesia.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "ibox.co.id",
+        href: "https://ibox.co.id/",
+      },
+    },
+    {
+      title: "Kounslr",
+      techStack: ["TypeScript", "ReactJS", "Firebase", "GCP"],
+      description: "Kounslr is a counseling platform for US students.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "kounslr.com",
+        href: "https://kounslr.com/",
       },
     },
   ],
-} as const;
+
+  sideProjects: [
+    {
+      title: "Secure File Uploader",
+      techStack: ["Golang", "Gin", "Sqlite", "ReactJS", "Side Project"],
+      description: "Exploration about securing and chunking file upload",
+      logo: ConsultlyLogo,
+      link: {
+        label: "go-secure-file-management",
+        href: "https://github.com/ramadhanabs/go-secure-file-management",
+      },
+    },
+    {
+      title: "Novaria DeFi",
+      techStack: ["Solidity", "Foundry", "ReactJS", "TailwindCSS", "Web3 Hackathon"],
+      description:
+        "Web3 DeFi for hackathon project: Tokenizing funding rate to Principle Token and Yield Token",
+      logo: ConsultlyLogo,
+      link: {
+        label: "novaria",
+        href: "https://novaria.vercel.app/",
+      },
+    },
+  ],
+} as const

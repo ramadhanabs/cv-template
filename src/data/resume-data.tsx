@@ -13,7 +13,6 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "https://bagus.men",
   contact: {
     email: "ramadhanabagus99@gmail.com",
-    tel: "+6282227804252",
     social: [
       {
         name: "GitHub",
